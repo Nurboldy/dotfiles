@@ -103,6 +103,7 @@ nnoremap <leader>gr <Plug>(coc-references)
 "fzf
 nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :GFiles<CR>
 nnoremap <leader>fs :Lines<CR>
 let g:fzf_layout = { 'down': '40%' }
 let g:fzf_colors =
@@ -171,4 +172,11 @@ endfunction
 nnoremap <leader> e :call ToggleNetrw()<CR>
 
 syntax on
+
+let g:seoul256_background = 233
 colo seoul256
+
+"colorscheme jellybeans
+
+"only Typessscript files
+set re=0

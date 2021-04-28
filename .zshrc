@@ -1,6 +1,19 @@
+
 source $HOME/.dotfile/prompt/prompt.zsh
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+
+# Define a custom file for compdump
+#ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$HOST-$ZSH_VERSION"
+
+export ZDOTDIR=$HOME/.cache/zsh
+
+HISTSIZE=1000
+SAVEHIST=$HISTSIZE
+HISTFILE=$ZDOTDIR/.zsh_history
+
+export PATH="/usr/local/tmux/bin:$PATH"
 
 export NVM_DIR="$HOME/.dotfile/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
